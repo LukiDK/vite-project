@@ -1,37 +1,19 @@
 import { useState } from "react";
 import "./App.scss";
+import { Header } from "./components/header/header.jsx";
+import { Nav } from "./components/nav/nav.jsx";
+import { Footer } from "./components/footer/footer.jsx";
+import { Main } from "./components/main/main.jsx";
 
 function App() {
   return (
     <>
       <Nav />
-      <Name name="John Doe" />
-      <Name name="Mike Hawk" />
-      <Name name="Mike Oxlong" />
+      <Header />
+      <Main />
+      <Footer />
     </>
   );
-}
-
-function Nav() {
-  return (
-    <nav>
-      <ul>
-        <li>
-          <a href="#home">Home</a>
-        </li>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  );
-}
-
-function Name({ name }) {
-  return <p>{name}</p>;
 }
 
 export default App;
