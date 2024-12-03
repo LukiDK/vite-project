@@ -1,29 +1,27 @@
-import styles from "./nav.module.scss";
+import { NavBarStyled, NavList, NavItem, NavLink } from "./NavBar.styled.js";
+
+const NavBar = () => {
+  return (
+    <NavBarStyled bgColor="black">
+      <NavList>
+        <NavItem>
+          <NavLink href="#">LOGO</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="#">Contact</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="#">Wallah</NavLink>
+        </NavItem>
+      </NavList>
+    </NavBarStyled>
+  );
+};
 
 export const Nav = () => {
   return (
-    <nav>
-      <ul>
-        <li>
-          <a href="#" className={styles.logo}>
-            LOGO
-          </a>
-        </li>
-        <li>
-          <a href="#about" style={{ color: "orange" }}>
-            About
-          </a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
+    <>
+      <NavBar />
+    </>
   );
 };

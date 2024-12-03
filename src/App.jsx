@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.scss";
 import { Header } from "./components/header/header.jsx";
 import { Nav } from "./components/nav/nav.jsx";
