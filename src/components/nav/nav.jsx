@@ -1,16 +1,18 @@
-import "./nav.scss";
+import styles from "./nav.module.scss";
 
 export const Nav = () => {
   return (
     <nav>
       <ul>
         <li>
-          <a href="#" style={{ color: "red" }}>
+          <a href="#" className={styles.logo}>
             LOGO
           </a>
         </li>
         <li>
-          <a href="#about">About</a>
+          <a href="#about" style={{ color: "orange" }}>
+            About
+          </a>
         </li>
         <li>
           <a href="#contact">Contact</a>
