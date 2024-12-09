@@ -37,9 +37,9 @@ export const Button = ({ textValue, size, theme }) => {
 
     return (
         <ButtonStyled
-            size={getButtonSize(size)}
-            color={getButtonColor(theme)}
-            fontColor={getFontColor(theme)}
+            $size={getButtonSize(size)}
+            $color={getButtonColor(theme)}
+            $fontcolor={getFontColor(theme)}
         >
             {textValue}
         </ButtonStyled>

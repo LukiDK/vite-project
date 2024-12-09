@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const NavBarStyled = styled.nav`
   width: 100%;
   padding: 2rem;
-  background-color: ${(props) => props.bgColor || "#333"};
+  background-color: ${(props) => props.$bgcolor || "#333"};
 `;
 export const NavList = styled.ul`
   max-width: 1080px;

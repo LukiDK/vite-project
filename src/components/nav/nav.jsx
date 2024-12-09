@@ -2,7 +2,7 @@ import { NavBarStyled, NavList, NavItem, NavLink } from "./NavBar.styled.js";
 
 const NavBar = () => {
   return (
-    <NavBarStyled bgColor="black">
+    <NavBarStyled $bgcolor="black">
       <NavList>
         <NavItem>
           <NavLink href="#">LOGO</NavLink>
