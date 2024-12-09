@@ -12,7 +12,7 @@ function App() {
       <Header />
       <Main />
       <Footer />
-      <Button textValue="ABE" size="small" />
+      <Button textValue="ABE" size="small" theme="light" />
     </>
   );
 }

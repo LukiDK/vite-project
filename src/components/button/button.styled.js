@@ -1,7 +1,10 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ButtonStyled = styled.button`
-    border: solid 1px #000;
-    padding: .5rem;
-    font-size: ${(props) => props.size};
+  font-size: ${(props) => props.size};
+  background-color: ${(props) => props.color};
+  color: ${(props) => props.fontColor};
+  border: none;
+  padding: 10px;
+  cursor: pointer;
 `;
