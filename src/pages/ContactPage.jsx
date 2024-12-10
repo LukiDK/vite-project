@@ -4,13 +4,14 @@ import React from "react";
 import { Nav } from "../components/nav/nav.jsx";
 import { Footer } from "../components/footer/footer.jsx";
 
-function About() {
+function ContactPage() {
     return (
         <>
-            <Nav />
-            <Footer />
+            <main>
+                <h1>Contact Us Page</h1>
+            </main>
         </>
     );
 }
 
-export default About;
+export default ContactPage;

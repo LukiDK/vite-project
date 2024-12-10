@@ -1,16 +1,27 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
+import Homepage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import ErrorPage from "./pages/ErrorPage";
+import ConceptPage from "./pages/ConceptPage";
+import ContactPage from "./pages/ContactPage";
 
-import "./App.scss";
+import { Nav } from "./components/nav/nav";
+import { Footer } from "./components/footer/footer";
+import { GlobalStyle } from "./styles/Global.style";
 
 function App() {
     return (
         <Router>
+            <GlobalStyle />
+            <Nav />
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
+                <Route path="/" element={<Homepage />} />
+                <Route path="/concept" element={<ConceptPage />} />
+                <Route path="/contact" element={<ContactPage />} />
+                <Route path="/about" element={<AboutPage />} />
+                <Route path="*" element={<ErrorPage />} />
             </Routes>
+            <Footer />
         </Router>
     );
 }

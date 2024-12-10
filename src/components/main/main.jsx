@@ -22,12 +22,12 @@ export const FoodList = (props) => {
 export const Main = () => {
   return (
     <>
-      <main>
+      <div className="container">
         <h1>Main</h1>
         <Name textValue="John Doe" />
         <RandomFood />
         <FoodList foods={foods} />
-      </main>
+      </div>
     </>
   );
 };
