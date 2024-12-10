@@ -1,21 +1,17 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+
 import "./App.scss";
-import { Header } from "./components/header/header.jsx";
-import { Nav } from "./components/nav/nav.jsx";
-import { Footer } from "./components/footer/footer.jsx";
-import { Main } from "./components/main/main.jsx";
-import { Button } from "./components/button/button.jsx";
-import { Card } from "./components/card/card.jsx";
 
 function App() {
     return (
-        <>
-            <Nav />
-            <Header />
-            <Main />
-            <Button textValue="ABE" size="small" theme="light" />
-            <Card headerText="Card Header" textValue="Card Text Value" />
-            <Footer />
-        </>
+        <Router>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+            </Routes>
+        </Router>
     );
 }
 

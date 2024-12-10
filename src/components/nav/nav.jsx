@@ -1,27 +1,25 @@
-import { NavBarStyled, NavList, NavItem, NavLink } from "./NavBar.styled.js";
+import { NavBarStyled } from "./NavBar.styled.js";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
-  return (
-    <NavBarStyled $bgcolor="black">
-      <NavList>
-        <NavItem>
-          <NavLink href="#">LOGO</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#">Contact</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#">Wallah</NavLink>
-        </NavItem>
-      </NavList>
-    </NavBarStyled>
-  );
+    return (
+        <NavBarStyled $bgcolor="black">
+            <ul>
+                <li>
+                    <Link to="/">LOGO</Link>
+                </li>
+                <li>
+                    <Link to="/about">About</Link>
+                </li>
+            </ul>
+        </NavBarStyled>
+    );
 };
 
 export const Nav = () => {
-  return (
-    <>
-      <NavBar />
-    </>
-  );
+    return (
+        <>
+            <NavBar />
+        </>
+    );
 };
