@@ -1,15 +1,21 @@
 // Home.jsx
 import React from "react";
-
-import { Nav } from "../components/nav/nav.jsx";
-import { Footer } from "../components/footer/footer.jsx";
+import { ContentWrapper } from "../components/contentwrapper/contentwrapper.jsx";
 
 function AboutPage() {
     return (
         <>
-            <main>
-                <h1>About Us Page</h1>
-            </main>
+            <ContentWrapper title="About Side">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore est reprehenderit cupiditate ut laborum blanditiis
+                    repudiandae facere aspernatur deserunt quod, voluptas saepe
+                    illo, a quos dolore quis veritatis! Dicta odit perspiciatis
+                    sapiente quis fugit error nulla mollitia voluptatem qui
+                    aperiam, dolore minima nihil aspernatur dolores culpa. Eius
+                    exercitationem nobis obcaecati.
+                </p>
+            </ContentWrapper>
         </>
     );
 }
